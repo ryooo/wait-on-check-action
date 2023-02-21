@@ -45,6 +45,8 @@ runs:
     - uses: ruby/setup-ruby@v1
       with:
         ruby-version: 3.2 # Not needed with a .ruby-version file
+      env:
+        ImageOS: macos12 # ver 12
 
     - name: Cache Ruby Gems
       uses: actions/cache@v3
